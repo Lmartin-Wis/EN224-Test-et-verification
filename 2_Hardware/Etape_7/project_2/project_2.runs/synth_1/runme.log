@@ -1,0 +1,380 @@
+
+*** Running vivado
+    with args -log PGCD.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PGCD.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source PGCD.tcl -notrace
+Command: synth_design -top PGCD -part xc7a50tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9671 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1416.188 ; gain = 86.820 ; free physical = 7772 ; free virtual = 27208
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PGCD' [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/project_2/project_2.srcs/sources_1/new/PGCD.vhd:50]
+WARNING: [Synth 8-614] signal 'pr_state' is read in the process but is not in the sensitivity list [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/project_2/project_2.srcs/sources_1/new/PGCD.vhd:71]
+WARNING: [Synth 8-614] signal 'idata_en' is read in the process but is not in the sensitivity list [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/project_2/project_2.srcs/sources_1/new/PGCD.vhd:71]
+WARNING: [Synth 8-614] signal 'copy_a' is read in the process but is not in the sensitivity list [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/project_2/project_2.srcs/sources_1/new/PGCD.vhd:71]
+WARNING: [Synth 8-614] signal 'copy_b' is read in the process but is not in the sensitivity list [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/project_2/project_2.srcs/sources_1/new/PGCD.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element cpt_reg was removed.  [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/project_2/project_2.srcs/sources_1/new/PGCD.vhd:107]
+WARNING: [Synth 8-6014] Unused sequential element copy_assert_A_reg was removed.  [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/project_2/project_2.srcs/sources_1/new/PGCD.vhd:117]
+WARNING: [Synth 8-6014] Unused sequential element copy_assert_B_reg was removed.  [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/project_2/project_2.srcs/sources_1/new/PGCD.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'PGCD' (1#1) [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/project_2/project_2.srcs/sources_1/new/PGCD.vhd:50]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1460.828 ; gain = 131.461 ; free physical = 7784 ; free virtual = 27221
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1460.828 ; gain = 131.461 ; free physical = 7784 ; free virtual = 27221
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1460.828 ; gain = 131.461 ; free physical = 7784 ; free virtual = 27221
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a50tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:8]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports CLK100MHZ]'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:8]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CPU_RESETN'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_TXD_IN'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:183]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:183]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_RXD_OUT'. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/xdc/Nexys-A7-100T-Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1812.828 ; gain = 0.004 ; free physical = 7479 ; free virtual = 26916
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:41 . Memory (MB): peak = 1812.828 ; gain = 483.461 ; free physical = 7581 ; free virtual = 27017
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:41 . Memory (MB): peak = 1812.828 ; gain = 483.461 ; free physical = 7581 ; free virtual = 27017
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:41 . Memory (MB): peak = 1812.828 ; gain = 483.461 ; free physical = 7583 ; free virtual = 27019
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'pr_state_reg' in module 'PGCD'
+INFO: [Synth 8-5545] ROM "copy_a" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "copy_a" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "copy_b" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "copy_b" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "odata" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "odata_en" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               etat_init |                              001 |                               00
+             etat_calcul |                              010 |                               01
+                etat_out |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pr_state_reg' using encoding 'one-hot' in module 'PGCD'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:42 . Memory (MB): peak = 1812.828 ; gain = 483.461 ; free physical = 7575 ; free virtual = 27012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PGCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "copy_b" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "copy_b" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "copy_a" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "copy_a" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:43 . Memory (MB): peak = 1812.828 ; gain = 483.461 ; free physical = 7556 ; free virtual = 26995
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:55 . Memory (MB): peak = 1812.828 ; gain = 483.461 ; free physical = 7460 ; free virtual = 26899
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:55 . Memory (MB): peak = 1812.828 ; gain = 483.461 ; free physical = 7460 ; free virtual = 26899
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:55 . Memory (MB): peak = 1812.828 ; gain = 483.461 ; free physical = 7459 ; free virtual = 26897
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:56 . Memory (MB): peak = 1812.828 ; gain = 483.461 ; free physical = 7459 ; free virtual = 26898
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:56 . Memory (MB): peak = 1812.828 ; gain = 483.461 ; free physical = 7459 ; free virtual = 26898
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:56 . Memory (MB): peak = 1812.828 ; gain = 483.461 ; free physical = 7459 ; free virtual = 26898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:56 . Memory (MB): peak = 1812.828 ; gain = 483.461 ; free physical = 7459 ; free virtual = 26898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:56 . Memory (MB): peak = 1812.828 ; gain = 483.461 ; free physical = 7459 ; free virtual = 26898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:56 . Memory (MB): peak = 1812.828 ; gain = 483.461 ; free physical = 7459 ; free virtual = 26898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    27|
+|3     |LUT2   |    67|
+|4     |LUT3   |     1|
+|5     |LUT4   |    76|
+|6     |LUT5   |     9|
+|7     |LUT6   |    75|
+|8     |FDCE   |    67|
+|9     |FDPE   |     1|
+|10    |FDRE   |    32|
+|11    |IBUF   |    67|
+|12    |OBUF   |    33|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   456|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:56 . Memory (MB): peak = 1812.828 ; gain = 483.461 ; free physical = 7459 ; free virtual = 26898
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1812.828 ; gain = 131.461 ; free physical = 7515 ; free virtual = 26953
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:56 . Memory (MB): peak = 1812.828 ; gain = 483.461 ; free physical = 7525 ; free virtual = 26964
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 94 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 29 Warnings, 21 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:57 . Memory (MB): peak = 1812.828 ; gain = 496.090 ; free physical = 7513 ; free virtual = 26951
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_7/project_2/project_2.runs/synth_1/PGCD.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PGCD_utilization_synth.rpt -pb PGCD_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1812.828 ; gain = 0.000 ; free physical = 7512 ; free virtual = 26950
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 11 17:25:39 2021...
