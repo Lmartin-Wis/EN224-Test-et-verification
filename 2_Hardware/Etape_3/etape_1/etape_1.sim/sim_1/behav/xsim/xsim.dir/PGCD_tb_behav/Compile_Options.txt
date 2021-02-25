@@ -1,0 +1,1 @@
+-wto "2c9d428f53e6492a90d8e8574e59f29d" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "PGCD_tb_behav" "xil_defaultlib.PGCD_tb" -log "elaborate.log" 

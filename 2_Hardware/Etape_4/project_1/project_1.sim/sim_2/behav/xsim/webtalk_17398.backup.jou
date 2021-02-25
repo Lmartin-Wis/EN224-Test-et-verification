@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Feb 11 14:52:25 2021
+# Process ID: 17398
+# Current directory: /net/s/lmartin042/project_1/project_1.sim/sim_2/behav/xsim
+# Command line: wbtcv -mode batch -source /net/s/lmartin042/project_1/project_1.sim/sim_2/behav/xsim/xsim.dir/PGCD_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /net/s/lmartin042/project_1/project_1.sim/sim_2/behav/xsim/webtalk.log
+# Journal file: /net/s/lmartin042/project_1/project_1.sim/sim_2/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /net/s/lmartin042/project_1/project_1.sim/sim_2/behav/xsim/xsim.dir/PGCD_behav/webtalk/xsim_webtalk.tcl -notrace

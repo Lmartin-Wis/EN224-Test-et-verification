@@ -1,0 +1,33 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/s/lmartin042/project_2/project_2.srcs/sources_1/new/PGCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PGCD
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/s/lmartin042/project_2/project_2.srcs/sim_1/new/PGCD_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PGCD_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/s/lmartin042/project_2/project_2.srcs/sim_1/new/PGCD_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PGCD_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/s/lmartin042/project_2/project_2.srcs/sim_1/new/PGCD_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PGCD_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/s/lmartin042/project_2/project_2.srcs/sim_1/new/PGCD_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PGCD_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/s/lmartin042/project_2/project_2.srcs/sim_1/new/PGCD_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PGCD_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/s/lmartin042/project_2/project_2.srcs/sources_1/new/PGCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PGCD
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/s/lmartin042/project_2/project_2.srcs/sources_1/new/PGCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PGCD
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/s/lmartin042/project_2/project_2.srcs/sources_1/new/PGCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PGCD
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/s/lmartin042/project_2/project_2.srcs/sources_1/new/PGCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PGCD
+ERROR: [VRFC 10-1412] syntax error near = [/net/s/lmartin042/project_2/project_2.srcs/sources_1/new/PGCD.vhd:144]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/net/s/lmartin042/project_2/project_2.srcs/sources_1/new/PGCD.vhd:50]
+INFO: [VRFC 10-240] VHDL file /net/s/lmartin042/project_2/project_2.srcs/sources_1/new/PGCD.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/s/lmartin042/project_2/project_2.srcs/sources_1/new/PGCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PGCD
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_4/project_2/project_2.srcs/sources_1/new/PGCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PGCD
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_4/project_2/project_2.srcs/sim_1/new/PGCD_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PGCD_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_4/project_2/project_2.srcs/sim_1/new/PGCD_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PGCD_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/net/s/lmartin042/S8/verif/EN224-Test-et-verification/2_Hardware/Etape_4/project_2/project_2.srcs/sim_1/new/PGCD_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PGCD_tb
